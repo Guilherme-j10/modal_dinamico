@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    font-family: Arial;
+    border: none;
+}
+
+body{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul li:first-child{
+    border-radius: 5px 5px 0px 0px;
+}
+
+ul li:last-child{
+    border-radius: 0px 0px 5px 5px;
+    border-bottom: none;
+}
+
+ul li{
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: solid 1px #ccc;
+    color: #333;
+}
+
+ul li .line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li .line button{
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: #973434;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+ul li p{
+    margin-top: 15px;
+    color: #666;
+    padding: 0px 10px;
+}
+
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.466);   
+}
+
+.modal .box_modal{
+    background-color: #fff;
+    width: 50%;
+    /* padding: 12px; */
+    border-radius: 5px;
+    color: #333;
+}
+
+.modal .box_modal .header_modal{
+    width: 100%;
+    padding: 15px;
+    border-bottom: solid 1px #ccc;
+}
+
+.modal .box_modal .header_modal h1{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.modal .box_modal p{
+    color: #666;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal .box_modal .line_modal{
+    width: 100%;
+    padding: 20px;
+    border-top: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal .box_modal .line_modal a:first-child{
+    background-color: rgb(53, 48, 48);
+}
+
+.modal .box_modal .line_modal a{
+    color: #fff;
+    background-color: #973434;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
