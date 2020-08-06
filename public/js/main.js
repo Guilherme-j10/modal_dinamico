@@ -16,7 +16,11 @@
 
                     for(let k = 0; k < close.length; k++){
                         close[k].addEventListener("click", () => {
-                            modal[z].style.display = "none";
+                            if(toogle){
+                                modal[z].style.display = "none";
+                            }
+
+                            toogle = false;
                         })
                     }
 
